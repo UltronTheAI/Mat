@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./mat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT 2021</title>
+</head>
+<body>
+    <div class="dts">
+        <h1>Choose</h1>
+        <p>Choose Any Mode To Play | 36 question.</p>
+    </div>
+    <div class="box">
+        <div class="marathi">
+            <button onclick="but1()">Normal</button>
+        </div>
+        <div class="hindi">
+            <button onclick="but2()">Easy</button>
+        </div>
+        <div class="maths">
+            <button onclick="but3()">Hard</button>
+        </div>
+        <div class="english">
+            <button onclick="but4()">Expert</button>
+        </div>
+    </div>
+    <div class="app">
+        <span id="spi">1</span>
+        <button id="fail">0</button>
+        <button id="write">0</button>
+        <input type="number" placeholder="Ans" id="aansi" class="post9">
+        <button id="b" onclick="next_mo()">OK</button>
+        <button id="back" onclick="bac()">Back</button>
+        <h1 class="ques"></h1>
+    </div>
+    <script>
+        var question____ = '';
+        var ans_______ = '';
+    </script>
+    <script>
+
+        
+    </script>
+    <script>
+        var mode = '';
+        var ioplhj = 0;
+        var ques_start_ = 0;
+        var qu_l = ['x', '-', '+', '/'];
+        var lts__1 = 0;
+        var lts__2 = 0;
+        var lts__3 = 0;
+        var write_answer = 0;
+        var wrowng_angswer = 0;
+    </script>
+    <script>
+        function but1() {
+                document.querySelector('.box').style.display='none';
+                document.querySelector('.app').style.display = 'flex';
+                document.querySelector('.dts h1').innerHTML='Game-Normal';
+                mode = '1';
+                write_answer = 0;
+            wrowng_angswer = 0;
+question____ = 0;
+ques_start_ = 0;
+            document.getElementById('fail').innerHTML = wrowng_angswer;
+            document.getElementById("spi").innerHTML = ques_start_;
+                lts__1 = Math.floor(Math.random() * 18 + ioplhj * 1) + 18 + ioplhj * 1;
+                lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                lts__3 = Math.floor(Math.random() * 18 + ioplhj) + ioplhj * 1 ;
+                question____ = lts__1 + lts__2 + lts__3;
+                ans_______ = eval(question____);
+                ques_start_ += 1;
+                document.getElementById("spi").innerHTML = ques_start_;
+                
+            document.querySelector(".ques").innerHTML = question____;
+                document.querySelector('.dts p').innerHTML = '36 question | Press Back To Back.';
+            }
+        function but2() {
+                document.querySelector('.box').style.display='none';
+                document.querySelector('.dts h1').innerHTML='Game-Easy';
+                document.querySelector('.app').style.display = 'flex';
+                mode = '2';
+
+            write_answer = 0;
+            wrowng_angswer = 0;
+            question____ = 0;
+            ques_start_ = 0;
+            document.getElementById('fail').innerHTML = wrowng_angswer;
+            document.getElementById("spi").innerHTML = ques_start_;
+            lts__1 = Math.floor(Math.random() * 18 + ioplhj * 1) + 18 + ioplhj * 1;
+            lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+            lts__3 = Math.floor(Math.random() * 18 + ioplhj) + ioplhj * 1;
+            question____ = lts__1 + lts__2 + lts__3;
+            ans_______ = eval(question____);
+            ques_start_ += 1;
+            document.getElementById("spi").innerHTML = ques_start_;
+
+            document.querySelector(".ques").innerHTML = question____;
+
+                document.querySelector('.dts p').innerHTML = '36 question | Press Back To Back.';
+            }
+        function but3() {
+                document.querySelector('.box').style.display='none';
+                document.querySelector('.dts h1').innerHTML='Game-Hard';
+                document.querySelector('.app').style.display = 'flex';
+                mode = '3';
+
+            write_answer = 0;
+            wrowng_angswer = 0;
+            question____ = 0;
+            ques_start_ = 0;
+            document.getElementById('fail').innerHTML = wrowng_angswer;
+            document.getElementById("spi").innerHTML = ques_start_;
+            lts__1 = Math.floor(Math.random() * 18 *9 + ioplhj * 1) + 18 *9 + ioplhj * 1;
+            lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+            lts__3 = Math.floor(Math.random() * 18 *9 + ioplhj) + ioplhj * 1 *9;
+            question____ = lts__1 + lts__2 + lts__3;
+            ans_______ = eval(question____);
+            ques_start_ += 1;
+            document.getElementById("spi").innerHTML = ques_start_;
+
+            document.querySelector(".ques").innerHTML = question____;
+
+                document.querySelector('.dts p').innerHTML = '36 question | Press Back To Back.';
+            }
+        function but4() {
+                document.querySelector('.box').style.display='none';
+                document.querySelector('.dts h1').innerHTML='Game-Expert';
+                document.querySelector('.app').style.display = 'flex';
+                mode = '4';
+            write_answer = 0;
+            wrowng_angswer = 0;
+            question____ = 0;
+            ques_start_ = 0;
+            document.getElementById('fail').innerHTML = wrowng_angswer;
+            document.getElementById("spi").innerHTML = ques_start_;
+            lts__1 = Math.floor(Math.random() * 18 * 17 + ioplhj * 1) + 18 * 17 + ioplhj * 1 * 17;
+            lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+            lts__3 = Math.floor(Math.random() * 18 * 17 + ioplhj) + ioplhj * 1 * 17;
+            question____ = lts__1 + lts__2 + lts__3;
+            ans_______ = eval(question____);
+            ques_start_ += 1;
+            document.getElementById("spi").innerHTML = ques_start_;
+
+            document.querySelector(".ques").innerHTML = question____;
+
+                document.querySelector('.dts p').innerHTML = '36 question | Press Back To Back.';
+            }
+            function bac()
+            {
+                 document.querySelector('.box').style.display = 'flex';
+                  document.querySelector('.app').style.display = 'none';
+                  document.querySelector('.dts h1').innerHTML = 'Choose';
+                  document.querySelector('.dts p').innerHTML = 'Choose Any Mode To Play | 36 question.';
+            }
+            function next_mo()
+            {
+                if (mode == '1'){
+                    if (document.getElementById('aansi').value == ans_______){
+                    lts__1 = Math.floor(Math.random() * 18 + ioplhj * 1) + 18 + ioplhj * 1;
+                    lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                    lts__3 = Math.floor(Math.random() * 18 + ioplhj) + ioplhj * 1;
+                    question____ = lts__1 + lts__2 + lts__3;
+                    ans_______ = eval(question____);
+                    ques_start_ += 1;
+                    ioplhj += 1;
+                document.querySelector(".ques").innerHTML = question____;
+                write_answer += 1;
+                document.getElementById('write').innerHTML = write_answer;
+                        document.getElementById("spi").innerHTML = ques_start_;
+                        document.getElementById('aansi').value = '';
+                    }
+                    else
+                    {
+                        lts__1 = Math.floor(Math.random() * 18 + ioplhj * 1) + 18 + ioplhj * 1;
+                        lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                        lts__3 = Math.floor(Math.random() * 18 + ioplhj) + ioplhj * 1;
+                        question____ = lts__1 + lts__2 + lts__3;
+                        ans_______ = eval(question____);
+                        ques_start_ += 1;
+                        ioplhj += 1;
+                        document.querySelector(".ques").innerHTML = question____;
+                        wrowng_angswer += 1;
+                        document.getElementById('fail').innerHTML = wrowng_angswer;
+                        document.getElementById("spi").innerHTML = ques_start_;
+                        document.getElementById('aansi').value = '';
+                    }
+                }
+
+
+                if (mode == '2') {
+                    if (document.getElementById('aansi').value == ans_______) {
+                        lts__1 = Math.floor(Math.random() * 18 + ioplhj * 1) + 18 + ioplhj * 1;
+                        lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                        lts__3 = Math.floor(Math.random() * 18 + ioplhj) + ioplhj * 1;
+                        question____ = lts__1 + lts__2 + lts__3;
+                        ans_______ = eval(question____);
+                        ques_start_ += 1;
+                        ioplhj += 1;
+                        document.querySelector(".ques").innerHTML = question____;
+                        write_answer += 1;
+                        document.getElementById('write').innerHTML = write_answer;
+                        document.getElementById("spi").innerHTML = ques_start_;
+                        document.getElementById('aansi').value = '';
+                    }
+                    else {
+                        lts__1 = Math.floor(Math.random() * 18 + ioplhj * 1) + 18 + ioplhj * 1;
+                        lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                        lts__3 = Math.floor(Math.random() * 18 + ioplhj) + ioplhj * 1;
+                        question____ = lts__1 + lts__2 + lts__3;
+                        ans_______ = eval(question____);
+                        ques_start_ += 1;
+                        ioplhj += 1;
+                        document.querySelector(".ques").innerHTML = question____;
+                        wrowng_angswer += 1;
+                        document.getElementById('fail').innerHTML = wrowng_angswer;
+                        document.getElementById("spi").innerHTML = ques_start_;
+                        document.getElementById('aansi').value = '';
+                    }
+                }
+
+
+                if (mode == '3') {
+                    if (document.getElementById('aansi').value == ans_______) {
+                        lts__1 = Math.floor(Math.random() * 18 * 9 + ioplhj * 1) + 18 * 9 + ioplhj * 1;
+                        lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                        lts__3 = Math.floor(Math.random() * 18 * 9 + ioplhj) + ioplhj * 1 * 9;
+                        question____ = lts__1 + lts__2 + lts__3;
+                        ans_______ = eval(question____);
+                        ques_start_ += 1;
+                        ioplhj += 1;
+                        document.querySelector(".ques").innerHTML = question____;
+                        write_answer += 1;
+                        document.getElementById('write').innerHTML = write_answer;
+                        document.getElementById("spi").innerHTML = ques_start_;
+                        document.getElementById('aansi').value = '';
+                    }
+                    else {
+                        lts__1 = Math.floor(Math.random() * 18 + ioplhj * 1) + 18 + ioplhj * 1;
+                        lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                        lts__3 = Math.floor(Math.random() * 18 + ioplhj) + ioplhj * 1;
+                        question____ = lts__1 + lts__2 + lts__3;
+                        ans_______ = eval(question____);
+                        ques_start_ += 1;
+                        ioplhj += 1;
+                        document.querySelector(".ques").innerHTML = question____;
+                        wrowng_angswer += 1;
+                        document.getElementById('fail').innerHTML = wrowng_angswer;
+                        document.getElementById("spi").innerHTML = ques_start_;
+                        document.getElementById('aansi').value = '';
+                    }
+                }
+
+
+                if (mode == '4') {
+                    if (document.getElementById('aansi').value == ans_______) {
+                        lts__1 = Math.floor(Math.random() * 18 * 17 + ioplhj * 1) + 18 * 17 + ioplhj * 1 * 17;
+                        lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                        lts__3 = Math.floor(Math.random() * 18 * 17 + ioplhj) + ioplhj * 1 * 17;
+                        question____ = lts__1 + lts__2 + lts__3;
+                        ans_______ = eval(question____);
+                        ques_start_ += 1;
+                        ioplhj += 1;
+                        document.querySelector(".ques").innerHTML = question____;
+                        write_answer += 1;
+                        document.getElementById('write').innerHTML = write_answer;
+                        document.getElementById("spi").innerHTML = ques_start_;
+                        document.getElementById('aansi').value = '';
+                    }
+                    else {
+                        lts__1 = Math.floor(Math.random() * 18 + ioplhj * 1) + 18 + ioplhj * 1;
+                        lts__2 = qu_l[Math.floor(Math.random() * 3) + 0];
+                        lts__3 = Math.floor(Math.random() * 18 + ioplhj) + ioplhj * 1;
+                        question____ = lts__1 + lts__2 + lts__3;
+                        ans_______ = eval(question____);
+                        ques_start_ += 1;
+                        ioplhj += 1;
+                        document.querySelector(".ques").innerHTML = question____;
+                        wrowng_angswer += 1;
+                        document.getElementById('fail').innerHTML = wrowng_angswer;
+                        document.getElementById("spi").innerHTML = ques_start_;
+                        document.getElementById('aansi').value = '';
+                    }
+                }
+
+
+                    if(ques_start_ > 36)
+                    {
+                        alert('successfull. You Complete 36 question.');
+                        bac();
+                    }
+            }
+    </script>
+    <script>
+        document.querySelector('.post9').addEventListener("keyup", function(e)
+        {
+            if (e.which === 13) {
+        next_mo();
+    }
+        });
+    </script>
+    <script src="./mat.js"></script>
+</body>
+</html>
