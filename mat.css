@@ -120,6 +120,10 @@ body
     width: 100px;
     height: 25px;
 }
+input{
+padding: 20px;
+    outline: none;
+}
 .app #back
 {
     position: absolute;
